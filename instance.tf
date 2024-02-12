@@ -3,13 +3,12 @@ provider "aws" {
 }
 
 resource "aws_instance" "instance" {
-    ami                 = "ami-0623e7a7b489397c1"
-    availability_zone   = "sa-east-1a"
+    ami                 = "(ami-0702b1aec03c6a3a4)"
+    availability_zone   = "ap-southeast-1"
     instance_type       = "t2.micro"
-    key_name            = "new-sao-paulo"
-    security_groups     = [	"sg-00f9a66c9c40f8557"]
+    key_name            = "singapore.akey"
     tags   = {
-        name = "demo"
+        Name = "facebook"
     }
      
 }
